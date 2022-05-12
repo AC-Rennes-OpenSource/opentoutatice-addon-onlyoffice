@@ -112,22 +112,22 @@
 
 	
 	<scm>
-		<url>https://github.com/osivia/opentoutatice-addon-onlyoffice</url>
-		<connection>scm:git:ssh://git@github.com/osivia/opentoutatice-addon-onlyoffice.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/osivia/opentoutatice-addon-onlyoffice.git</developerConnection>     
+		<url>https://github.com/AC-Rennes-OpenSource/opentoutatice-addon-onlyoffice</url>
+		<connection>scm:git:https://github.com/AC-Rennes-OpenSource/opentoutatice-addon-onlyoffice.git</connection>
+		<developerConnection>scm:git:https://github.com/AC-Rennes-OpenSource/opentoutatice-addon-onlyoffice.git</developerConnection>     
 		<tag>HEAD</tag> 
-    </scm>
+	</scm>
 
-	<distributionManagement>
-        <repository>
-            <id>osivia-releases</id>
-            <url>http://www.osivia.org/nexus/content/repositories/osivia-releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>osivia-snapshots</id>
-            <url>http://www.osivia.org/nexus/content/repositories/osivia-snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+        <distributionManagement>
+                <repository>
+                        <id>${releaseRepoId}</id>
+                        <url>${releaseRepoUrl}</url>
+                </repository>
+                <snapshotRepository>
+                        <id>${snapshotRepoId}</id>
+                        <url>${snapshotRepoUrl}</url>
+                </snapshotRepository>
+        </distributionManagement>
     
 </project>
 
